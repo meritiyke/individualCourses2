@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <title>Individual course page</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+    .container-fluid {
+    background: #FCFCFC;
+    height: 550px;
+    }
+    .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0rem;
+    }
+
+    .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    }
+
+    .column-left {
+    margin-left: 10rem;
+    margin-top: 1rem;
+    }
+
+    .column-right {
+    margin-left: 10rem;
+    margin-top: 1rem;
+    }
+    .start-row {
+    display: flex;
+    flex-direction: row;
+    }
+    .start-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5rem;
+    }
+    .color {
+        color: #3A0842;
+    }
+    .start-color {
+        padding: 4rem 0;
+        text-align: center;
+        color: #3A0842;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .card, .card-2 {
+        background: #FFFFFF;
+        box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        padding: 1rem 5rem;
+        cursor: pointer;
+         transition: transform .3s;
+    }
+    .card:hover, .card-2:hover{
+		transform: translateY(-1.5rem) scale(1.02);
+	}
+    .card-2 {
+        margin-top: 4rem;
+    }
+     .start-what {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 20px;
+    margin-top: 10rem;
+    }
+    .card-image::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    .card-image {
+        margin-top: 3rem;
+    }
+    .card-image img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    }
+
+    .card-image span .text {
+    margin-right: 10px;
+    margin-top: 15px;
+    }
+    .text {
+    font-size: 12px;
+    }
+    .checked {
+        color: #FAF35E;
+        padding: 2px;
+        font-size: 20px;
+    }
+    h4 {
+        display: block;
+        margin-block-start: .2em;
+        margin-block-end: -.3em;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .btn-reviews {
+        padding: 9px 35px;
+        background: #44CF6C;
+        border-radius: 10px;
+        border: none;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.655606px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+        body {
+        padding: 15px;
+        }
+        .card-image img {
+            margin: auto;
+            float: left;
+            display: block;
+            margin-right: 10px;
+        }
+        .card-text {
+          text-align: center;
+        }
+        br {
+            display: none;
+        }
+        .column-left {
+        margin-left: 0rem;
+        margin-top: 2rem;
+        }
+
+        .column-right {
+        margin-left: 0rem;
+        margin-top: 2rem;
+        }
+        .row {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        }
+        .container-fluid {
+        height: 800px;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        }
+        .start-what {
+            margin: 4rem 0;
+        }
+        .start-color {
+            margin: 1rem 0;
+            padding: 2rem 0;
+        }
+    }
+</style>
+<body>
+    <!-- On Start.ng, you are privileged to -->
+
+    <div class="container-fluid">
+        <h2 class="start-color">On Start.ng, you are privileged to</h2>
+        <div class='row'>
+            <div class='column'>
+                <div class='column-left'>
+                <div class="start-row">
+                    <img class="start-img" src="https://res.cloudinary.com/dcoqt2wpo/image/upload/v1570778521/Group_305_qcijzg.png" style="height:82px; width: 82px">
+                    <div class="start-text-container">
+                        <h4 class="color">Learn from the Best Teachers</h4>
+                        <p>Lorem ipsum was going to church and <br> she forgot to ferdsdscsd sdsdnd <br> dffdss gg dzxf fgg.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class='column'>
+                <div class='column-right'>
+                    <div class="start-row">
+                        <img class="start-img" src="https://res.cloudinary.com/dcoqt2wpo/image/upload/v1570778525/Group_309_jfclbm.png" style="height:82px; width: 82px">
+                        <div class="start-text-container">
+                            <h4 class="color">Join our Online Developer Community</h4>
+                            <p>Lorem ipsum was going to church and <br> she forgot to ferdsdscsd sdsdnd <br> dffdss gg dzxf fgg.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='column'>
+                <div class='column-left'>
+                    <div class="start-row">
+                        <img class="start-img"
+                            src="https://res.cloudinary.com/dcoqt2wpo/image/upload/v1570778523/Group_300_fyctov.png"
+                            style="height:82px; width: 82px">
+                        <div class="start-text-container">
+                            <h4 class="color">Learn from the Best Teachers</h4>
+                            <p>Lorem ipsum was going to church and <br> she forgot to ferdsdscsd sdsdnd <br> dffdss gg dzxf fgg.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='column'>
+                <div class='column-right'>
+                    <div class="start-row">
+                        <img class="start-img"
+                            src="https://res.cloudinary.com/dcoqt2wpo/image/upload/v1570778526/Group_306_u62juh.png"
+                            style="height:82px; width: 82px">
+                        <div class="start-text-container">
+                            <h4 class="color">Join our Online Developer Community</h4>
+                            <p>Lorem ipsum was going to church and <br> she forgot to ferdsdscsd sdsdnd <br> dffdss gg dzxf fgg.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="start-what">What students have to say about us</h2>
+    <section class="container">
+        <div class="card">
+            <div class="card-content">
+                <p class="card-text">The HNG internship is a 3-month remote internship designed to find and develop the <br> most talented software
+                    developers.
+                    Everyone is welcome to participate (there is no <br> entrance exam). Anyone can log into the internship using their
+                    laptop.
+                    Each week, we <br> give tasks.</p>
+                    <div class="card-image">
+                        <img src="https://res.cloudinary.com/deksm5bm1/image/upload/v1570787541/Ellipse.png" alt="">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        <h4>Dennis Lagbaja</h4>
+                        <p class="text"><em>Completed the Front End Developer Class</em></p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="card-2">
+            <div class="card-content">
+                <p class="card-text">The HNG internship is a 3-month remote internship designed to find and develop the <br>
+                    most talented software
+                    developers.
+                    Everyone is welcome to participate (there is no <br> entrance exam). Anyone can log into the internship
+                    using their
+                    laptop.
+                    Each week, we <br> give tasks.</p>
+                <div class="card-image">
+                    <img src="https://res.cloudinary.com/deksm5bm1/image/upload/v1570787620/Ellipse_1.png" alt="">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <h4>Khadirat Uche Jumbo</h4>
+                    <p class="text"><em>Completed the Laravel PHP Class</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="button">
+        <button type="button" class="btn-reviews">See More Reviews</button>
+    </div>
+</body>
+</html>
